@@ -1,6 +1,6 @@
 // --- IMPORTS --- //
 
-import 'style.css';
+import 'krzkro4122/krzkro4122.github.io/dist/style.css';
 
 import * as THREE from 'three';
 
