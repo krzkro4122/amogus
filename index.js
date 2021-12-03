@@ -67,11 +67,11 @@ function addStar() {
 Array(200).fill().forEach(addStar);
 
 // Background
-const spaceTexture = new THREE.TextureLoader().load('assets/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('space.jpg');
 scene.background = spaceTexture;
 
 // Amogus
-const amogusTexture = new THREE.TextureLoader().load('assets/amogus.jpg');
+const amogusTexture = new THREE.TextureLoader().load('amogus.jpg');
 const amogus = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial( {
@@ -82,8 +82,8 @@ const amogus = new THREE.Mesh(
 scene.add(amogus);
 
 // Moon
-const moonTexture = new THREE.TextureLoader().load('assets/moon.jpg');
-const normalMapMoon = new THREE.TextureLoader().load('assets/normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('moon.jpg');
+const normalMapMoon = new THREE.TextureLoader().load('normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
