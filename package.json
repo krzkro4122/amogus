@@ -1,6 +1,10 @@
 {
   "name": "myproject",
   "version": "0.0.0",
+  "main": "index.js",
+  "author": "krzkro4122",
+  "license": "ISC",
+  "description": "Amogus site",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
