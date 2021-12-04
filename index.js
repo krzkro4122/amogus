@@ -1,6 +1,6 @@
 // --- IMPORTS --- //
 
-import * as THREE from 'https://github.com/krzkro4122/krzkro4122.github.io/tree/main/node_modules/three/build/three.module.js';
+import * as THREE from './node_modules/three/build/three.module.js';
 
 // --- MAIN INITIALIZATIONS --- //
 
