@@ -2,7 +2,7 @@
 
 import "./style.css";
 
-import * as THREE from "three";
+import * as THREE from "./node_modules/three/build/three.module.js";
 
 // --- MAIN INITIALIZATIONS --- //
 
@@ -69,11 +69,11 @@ function addStar() {
 Array(200).fill().forEach(addStar);
 
 // Background
-const spaceTexture = new THREE.TextureLoader().load("/images/space.jpg");
+const spaceTexture = new THREE.TextureLoader().load("images/space.jpg");
 scene.background = spaceTexture;
 
 // Amogus
-const amogusTexture = new THREE.TextureLoader().load("/images/amogus.jpg");
+const amogusTexture = new THREE.TextureLoader().load("images/amogus.jpg");
 const amogus = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial({
@@ -84,8 +84,8 @@ const amogus = new THREE.Mesh(
 scene.add(amogus);
 
 // Moon
-const moonTexture = new THREE.TextureLoader().load("/images/moon.jpg");
-const normalMapMoon = new THREE.TextureLoader().load("/images/normal.jpg");
+const moonTexture = new THREE.TextureLoader().load("images/moon.jpg");
+const normalMapMoon = new THREE.TextureLoader().load("images/normal.jpg");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
